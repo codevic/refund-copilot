@@ -1,0 +1,24 @@
+{
+  "_note": "Illustrative refund policy. Thresholds are assumptions for the demo, not real Figma policy. Changing this file changes decisions, so it is versioned and the version is stamped on every decision.",
+  "version": "2026-09-v1",
+  "authorized_roles": [
+    "billing_admin"
+  ],
+  "auto_refund_intents": [
+    "accidental_renewal",
+    "duplicate_charge",
+    "unwanted_seats"
+  ],
+  "auto_refund_payment_methods": [
+    "card"
+  ],
+  "refund_window_days": 14,
+  "usage_check_intents": [
+    "accidental_renewal",
+    "unwanted_seats"
+  ],
+  "max_active_days_after_charge": 3,
+  "auto_refund_max_usd": 500,
+  "prior_refund_lookback_days": 365,
+  "escalation_sla": "1 business day"
+}

@@ -1,0 +1,9 @@
+# Local environment
+.venv/
+__pycache__/
+*.pyc
+.streamlit/secrets.toml
+.env
+
+# Personal presentation prep (not part of the prototype)
+docs/

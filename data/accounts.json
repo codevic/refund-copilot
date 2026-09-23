@@ -1,0 +1,408 @@
+{
+  "_note": "Synthetic demo data. All names, emails and amounts are fictional. Dates are stored as days_ago so the demo never goes stale. active_days_since = days the team used the product after the charge.",
+  "accounts": [
+    {
+      "account_id": "acc_acme",
+      "team_name": "Acme Studio",
+      "plan": "Professional",
+      "billing_interval": "annual",
+      "contract": false,
+      "seats": 3,
+      "users": [
+        {
+          "user_id": "u_priya",
+          "name": "Priya Shah",
+          "email": "priya@acmestudio.example",
+          "role": "billing_admin"
+        },
+        {
+          "user_id": "u_kim",
+          "name": "Kim Tran",
+          "email": "kim@acmestudio.example",
+          "role": "viewer"
+        }
+      ],
+      "charges": [
+        {
+          "charge_id": "ch_a1",
+          "type": "subscription_renewal",
+          "description": "Annual Professional renewal (3 seats)",
+          "amount": 432.0,
+          "days_ago": 1,
+          "dispute_open": false,
+          "active_days_since": 0
+        },
+        {
+          "charge_id": "ch_a0",
+          "type": "subscription_renewal",
+          "description": "Annual Professional renewal (3 seats)",
+          "amount": 432.0,
+          "days_ago": 366,
+          "dispute_open": false,
+          "active_days_since": 300
+        }
+      ],
+      "refunds": [],
+      "payment_method": "card"
+    },
+    {
+      "account_id": "acc_bright",
+      "team_name": "Brightline Labs",
+      "plan": "Professional",
+      "billing_interval": "monthly",
+      "contract": false,
+      "seats": 5,
+      "users": [
+        {
+          "user_id": "u_marco",
+          "name": "Marco Diaz",
+          "email": "marco@brightline.example",
+          "role": "editor"
+        },
+        {
+          "user_id": "u_jordan",
+          "name": "Jordan Blake",
+          "email": "jordan@brightline.example",
+          "role": "billing_admin"
+        }
+      ],
+      "charges": [
+        {
+          "charge_id": "ch_b1",
+          "type": "seat_addition",
+          "description": "1 editor seat added",
+          "amount": 15.0,
+          "days_ago": 2,
+          "dispute_open": false,
+          "active_days_since": 1
+        },
+        {
+          "charge_id": "ch_b0",
+          "type": "subscription_payment",
+          "description": "Monthly Professional (5 seats)",
+          "amount": 75.0,
+          "days_ago": 10,
+          "dispute_open": false,
+          "active_days_since": 8
+        }
+      ],
+      "refunds": [],
+      "payment_method": "card"
+    },
+    {
+      "account_id": "acc_north",
+      "team_name": "Northwind Corp",
+      "plan": "Enterprise",
+      "billing_interval": "annual",
+      "contract": true,
+      "seats": 400,
+      "users": [
+        {
+          "user_id": "u_dana",
+          "name": "Dana Okafor",
+          "email": "dana@northwind.example",
+          "role": "billing_admin"
+        }
+      ],
+      "charges": [
+        {
+          "charge_id": "ch_n1",
+          "type": "contract_invoice",
+          "description": "Enterprise annual contract invoice",
+          "amount": 48000.0,
+          "days_ago": 5,
+          "dispute_open": false,
+          "active_days_since": 4
+        }
+      ],
+      "refunds": [],
+      "payment_method": "invoice"
+    },
+    {
+      "account_id": "acc_pixel",
+      "team_name": "Pixel & Co",
+      "plan": "Professional",
+      "billing_interval": "monthly",
+      "contract": false,
+      "seats": 3,
+      "users": [
+        {
+          "user_id": "u_sam",
+          "name": "Sam Lee",
+          "email": "sam@pixelco.example",
+          "role": "billing_admin"
+        }
+      ],
+      "charges": [
+        {
+          "charge_id": "ch_p1",
+          "type": "subscription_payment",
+          "description": "Monthly Professional (3 seats)",
+          "amount": 45.0,
+          "days_ago": 3,
+          "dispute_open": false,
+          "active_days_since": 2
+        }
+      ],
+      "refunds": [],
+      "payment_method": "card"
+    },
+    {
+      "account_id": "acc_nine",
+      "team_name": "Studio Nine",
+      "plan": "Professional",
+      "billing_interval": "annual",
+      "contract": false,
+      "seats": 2,
+      "users": [
+        {
+          "user_id": "u_alex",
+          "name": "Alex Kim",
+          "email": "alex@studionine.example",
+          "role": "billing_admin"
+        }
+      ],
+      "charges": [
+        {
+          "charge_id": "ch_s2",
+          "type": "seat_addition",
+          "description": "3 editor seats added (prorated)",
+          "amount": 36.0,
+          "days_ago": 4,
+          "dispute_open": false,
+          "active_days_since": 1
+        },
+        {
+          "charge_id": "ch_s1",
+          "type": "subscription_renewal",
+          "description": "Annual Professional renewal (2 seats)",
+          "amount": 288.0,
+          "days_ago": 6,
+          "dispute_open": false,
+          "active_days_since": 5
+        }
+      ],
+      "refunds": [],
+      "payment_method": "card"
+    },
+    {
+      "account_id": "acc_harbor",
+      "team_name": "Harbor Collective",
+      "plan": "Professional",
+      "billing_interval": "monthly",
+      "contract": false,
+      "seats": 4,
+      "users": [
+        {
+          "user_id": "u_lee",
+          "name": "Lee Park",
+          "email": "lee@harbor.example",
+          "role": "billing_admin"
+        }
+      ],
+      "charges": [
+        {
+          "charge_id": "ch_h2",
+          "type": "subscription_payment",
+          "description": "Monthly Professional (4 seats)",
+          "amount": 60.0,
+          "days_ago": 2,
+          "dispute_open": false,
+          "active_days_since": 1
+        },
+        {
+          "charge_id": "ch_h1",
+          "type": "subscription_payment",
+          "description": "Monthly Professional (4 seats)",
+          "amount": 60.0,
+          "days_ago": 2,
+          "dispute_open": false,
+          "active_days_since": 1
+        }
+      ],
+      "refunds": [],
+      "payment_method": "card"
+    },
+    {
+      "account_id": "acc_oak",
+      "team_name": "Oakline",
+      "plan": "Professional",
+      "billing_interval": "annual",
+      "contract": false,
+      "seats": 2,
+      "users": [
+        {
+          "user_id": "u_rin",
+          "name": "Rin Sato",
+          "email": "rin@oakline.example",
+          "role": "billing_admin"
+        }
+      ],
+      "charges": [
+        {
+          "charge_id": "ch_o1",
+          "type": "subscription_renewal",
+          "description": "Annual Professional renewal (2 seats)",
+          "amount": 240.0,
+          "days_ago": 40,
+          "dispute_open": false,
+          "active_days_since": 30
+        }
+      ],
+      "refunds": [],
+      "payment_method": "card"
+    },
+    {
+      "account_id": "acc_quartz",
+      "team_name": "Quartz Media",
+      "plan": "Professional",
+      "billing_interval": "annual",
+      "contract": false,
+      "seats": 2,
+      "users": [
+        {
+          "user_id": "u_tao",
+          "name": "Tao Chen",
+          "email": "tao@quartz.example",
+          "role": "billing_admin"
+        }
+      ],
+      "charges": [
+        {
+          "charge_id": "ch_q1",
+          "type": "subscription_renewal",
+          "description": "Annual Professional renewal (2 seats)",
+          "amount": 192.0,
+          "days_ago": 3,
+          "dispute_open": false,
+          "active_days_since": 1
+        }
+      ],
+      "refunds": [
+        {
+          "refund_id": "re_q0",
+          "charge_id": "ch_q_old",
+          "amount": 20.0,
+          "days_ago": 90
+        }
+      ],
+      "payment_method": "card"
+    },
+    {
+      "account_id": "acc_summit",
+      "team_name": "Summit Design",
+      "plan": "Professional",
+      "billing_interval": "annual",
+      "contract": false,
+      "seats": 12,
+      "users": [
+        {
+          "user_id": "u_ana",
+          "name": "Ana Silva",
+          "email": "ana@summit.example",
+          "role": "billing_admin"
+        }
+      ],
+      "charges": [
+        {
+          "charge_id": "ch_g1",
+          "type": "subscription_renewal",
+          "description": "Annual Professional renewal (12 seats)",
+          "amount": 1728.0,
+          "days_ago": 2,
+          "dispute_open": false,
+          "active_days_since": 1
+        }
+      ],
+      "refunds": [],
+      "payment_method": "card"
+    },
+    {
+      "account_id": "acc_maple",
+      "team_name": "Maple Studio",
+      "plan": "Professional",
+      "billing_interval": "monthly",
+      "contract": false,
+      "seats": 2,
+      "payment_method": "card",
+      "users": [
+        {
+          "user_id": "u_jo",
+          "name": "Jo Rivera",
+          "email": "jo@maple.example",
+          "role": "billing_admin"
+        }
+      ],
+      "charges": [
+        {
+          "charge_id": "ch_m1",
+          "type": "subscription_payment",
+          "description": "Monthly Professional (2 seats)",
+          "amount": 30.0,
+          "days_ago": 5,
+          "dispute_open": true,
+          "active_days_since": 0
+        }
+      ],
+      "refunds": []
+    },
+    {
+      "account_id": "acc_birch",
+      "team_name": "Birch Labs",
+      "plan": "Professional",
+      "billing_interval": "annual",
+      "contract": false,
+      "seats": 2,
+      "payment_method": "card",
+      "users": [
+        {
+          "user_id": "u_mo",
+          "name": "Mo Hassan",
+          "email": "mo@birch.example",
+          "role": "billing_admin"
+        }
+      ],
+      "charges": [
+        {
+          "charge_id": "ch_r1",
+          "type": "subscription_renewal",
+          "description": "Annual Professional renewal (2 seats)",
+          "amount": 240.0,
+          "days_ago": 10,
+          "dispute_open": false,
+          "active_days_since": 9
+        }
+      ],
+      "refunds": []
+    },
+    {
+      "account_id": "acc_cedar",
+      "team_name": "Cedar & Co",
+      "plan": "Professional",
+      "billing_interval": "annual",
+      "contract": false,
+      "seats": 3,
+      "payment_method": "invoice",
+      "users": [
+        {
+          "user_id": "u_ivy",
+          "name": "Ivy Brooks",
+          "email": "ivy@cedar.example",
+          "role": "billing_admin"
+        }
+      ],
+      "charges": [
+        {
+          "charge_id": "ch_c1",
+          "type": "subscription_renewal",
+          "description": "Annual Professional renewal (3 seats)",
+          "amount": 360.0,
+          "days_ago": 3,
+          "dispute_open": false,
+          "active_days_since": 0
+        }
+      ],
+      "refunds": []
+    }
+  ]
+}
